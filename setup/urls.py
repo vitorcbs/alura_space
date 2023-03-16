@@ -17,7 +17,7 @@ from django.contrib import admin
 from django.urls import path, include
 
 
-urlpatterns = [
+urlpatterns = [ #todas rotas que apontamos no projeto
     path('admin/', admin.site.urls),
-    path('', include('galeria.urls')),
+    path('', include('galeria.urls')), #envia para o arquivo de urls do app galeria
 ]
